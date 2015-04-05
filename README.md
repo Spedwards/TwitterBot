@@ -1,5 +1,5 @@
 # TwitterBot
-A Reddit/Twitter bot posting everything from a subreddit to Twitter
+A Reddit/Twitter bot posting everything from a subreddit to Twitter  
 Requires Python 3+
 
 # Installation
