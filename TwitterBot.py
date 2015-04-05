@@ -100,7 +100,7 @@ def tweetOut(content, api):
 	except:
 		print('Error: %s'%content)
 
-message_footer = "\n\n---\n^(I am a bot. If you do not want to receive any of these message, please [)[^(click this link and press send)](http://www.reddit.com/message/compose/?to=NAME&subject=Removal&message=remove)^(].)"
+message_footer = "\n\n---\n^(I am a bot. If you do not want to receive any of these message, please [)[^(click this link and press send)](http://www.reddit.com/message/compose/?to=%s&subject=Removal&message=remove)^(].)"%USERNAME
 
 auth = tweepy.OAuthHandler(CONSUMERKEY, CONSUMERSECRET)
 auth.set_access_token(ACCESSTOKEN, ACCESSSECRET)
