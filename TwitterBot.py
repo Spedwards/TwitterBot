@@ -21,7 +21,7 @@ t1.start()
 
 version = '1.0.0'
 
-print('Initializing TwitterBot_ v%s'%version)
+print('Initializing NAME v%s'%version)
 
 '''
 CONFIGURATION
@@ -29,7 +29,7 @@ CONFIGURATION
 
 USERAGEN = '''App: Reddit to Twitter # user agent
 				Version: %s
-				Description: Formats posts from /r/FutureFight and tweets them on @MFutureFight
+				Description: Formats posts from /r/SUBREDDIT and tweets them on @TWITTER
 				Known Issues: None'''%version
 
 
@@ -100,7 +100,7 @@ def tweetOut(content, api):
 	except:
 		print('Error: %s'%content)
 
-message_footer = "\n\n---\n^(I am a bot. If you do not want to receive any of these message, please [)[^(click this link and press send)](http://www.reddit.com/message/compose/?to=TwitterBot_&subject=Removal&message=remove)^(].)"
+message_footer = "\n\n---\n^(I am a bot. If you do not want to receive any of these message, please [)[^(click this link and press send)](http://www.reddit.com/message/compose/?to=NAME&subject=Removal&message=remove)^(].)"
 
 auth = tweepy.OAuthHandler(CONSUMERKEY, CONSUMERSECRET)
 auth.set_access_token(ACCESSTOKEN, ACCESSSECRET)
