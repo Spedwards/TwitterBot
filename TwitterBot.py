@@ -27,10 +27,10 @@ print('Initializing NAME v%s'%version)
 CONFIGURATION
 '''
 
-USERAGEN = '''App: Reddit to Twitter # user agent
+USERAGEN = '''App: Reddit to Twitter
 				Version: %s
 				Description: Formats posts from /r/SUBREDDIT and tweets them on @TWITTER
-				Known Issues: None'''%version
+				Known Issues: None'''%version # user agent
 
 
 USERNAME = '' # account username
@@ -80,7 +80,7 @@ def handleMessages(arr):
 			r.send_message(split[0], split[1], 'I am a bot, this cannot respond correctly.')
 		else:
 			print('%s wishes to be removed from the mailing list'%split[0])
-			r.send_message(split[0], 'Removal Confirmed', 'You have been removed from the list. To be re-added, please contact /u/Spedwards')
+			r.send_message(split[0], 'Removal Confirmed', 'You have been removed from the list. To be re-added, please contact /u/')
 			avoidListWrite(split[0])
 
 def avoidList():
